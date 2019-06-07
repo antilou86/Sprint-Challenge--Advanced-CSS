@@ -8,3 +8,16 @@
     justify-content: center;
     align-items: center;
 }
+
+.buttonsOmg(@height, @width, @buttonColor, @buttonText, @fontSize) {
+    height: @height;
+    width: @width;
+    background-color:@buttonColor;
+    color: @buttonText;
+    font-size: @fontSize;
+    border-radius: 5px;
+    text-align: center;
+    .flexFlow(row, nowrap);
+    .center();
+    min-width: 100px;
+}
