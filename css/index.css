@@ -264,7 +264,11 @@ footer {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  min-width: 100px;
+  min-width: 80px;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
