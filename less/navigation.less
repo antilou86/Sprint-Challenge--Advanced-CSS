@@ -1,22 +1,40 @@
 // Navigation code here
 nav {
     .flexFlow(row, wrap);
-    justify-content: space-between;
-    max-width: 800px;
+    .center();
     width: 100%;
     margin: 0 auto;
+    
     h1 {
         width: 100%;
-        justify-content: center;
+        text-align: center;
         font-size: 4rem;
+        padding: 10px 0 15px 0;
+        background-color: @nav-bg;
     }
     img {
         width:100%;
-        margin: 0 auto;
-    }
+        max-width: 800px;
+        border-radius: 10px;
+    }    
     p {
-        width: 40%;
-        justify-content: space-between;
-        margin: 0 auto;
+        width: 100%;
+        min-width: @maxWidth - (@maxWidth * .5);
+        text-align: center;
+        justify-content: space-around;
+        font-family: @nav-font;
+        padding-bottom: 10px;
+        background-color: @nav-bg;
+        a {
+            padding: 10px 2% 20px 2%;
+        }
+        a:link {
+            text-decoration: none; 
+            color: @nav-font;
+         }
+         a:visited {
+             text-decoration: none;
+             color: @nav-font;
+         }
     }
 }
